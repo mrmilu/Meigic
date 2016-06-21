@@ -17,4 +17,6 @@ public abstract class MeigicPresenter<V extends MeigicView> {
     }
 
     public abstract void setup();
+
+    public abstract void destroy();
 }

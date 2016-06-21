@@ -35,6 +35,7 @@ public abstract class MeigicDialog<P extends MeigicPresenter, V extends MeigicVi
 
     @Override public void onDetach() {
         super.onDetach();
+        presenter.destroy();
         presenter = null;
     }
 

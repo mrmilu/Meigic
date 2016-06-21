@@ -41,6 +41,7 @@ public abstract class MeigicViewGroup<P extends MeigicPresenter, V extends Meigi
 
     @Override protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
+        presenter.destroy();
         presenter = null;
     }
 

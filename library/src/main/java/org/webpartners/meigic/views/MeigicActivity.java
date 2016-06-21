@@ -24,6 +24,7 @@ public abstract class MeigicActivity<P extends MeigicPresenter, V extends Meigic
 
     @Override public void onStop() {
         super.onStop();
+        presenter.destroy();
         presenter = null;
     }
 
