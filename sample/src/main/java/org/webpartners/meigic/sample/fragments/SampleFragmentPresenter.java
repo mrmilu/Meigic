@@ -17,4 +17,9 @@ public class SampleFragmentPresenter extends MeigicPresenter<SampleFragmentView>
     @Override public void setup() {
         // Presenter init here
     }
+
+
+    @Override public void destroy() {
+        // Presenter destroy here
+    }
 }

@@ -17,4 +17,8 @@ public class SampleActivityPresenter extends MeigicPresenter<SampleActivityView>
     @Override public void setup() {
         // Presenter init here
     }
+
+    @Override public void destroy() {
+        // Presenter destroy here
+    }
 }
