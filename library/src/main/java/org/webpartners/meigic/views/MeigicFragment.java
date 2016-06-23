@@ -35,7 +35,8 @@ public abstract class MeigicFragment<P extends MeigicPresenter, V extends Meigic
 
     @Override public void onDetach() {
         super.onDetach();
-        presenter.destroy();
+        if (presenter != null)
+            presenter.destroy();
         presenter = null;
     }
 
