@@ -17,8 +17,12 @@ public abstract class MeigicActivity<P extends MeigicPresenter, V extends Meigic
 
     @Override public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        presenter = this.initPresenter();
         this.initView();
+    }
+
+    @Override protected void onStart() {
+        super.onStart();
+        presenter = this.initPresenter();
         presenter.setup();
     }
 
