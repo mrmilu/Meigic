@@ -30,6 +30,10 @@ public abstract class MeigicActivity<P extends MeigicPresenter, V extends Meigic
         super.onStop();
         if (presenter != null)
             presenter.destroy();
+    }
+
+    @Override protected void onDestroy() {
+        super.onDestroy();
         presenter = null;
     }
 
