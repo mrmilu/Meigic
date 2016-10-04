@@ -38,11 +38,6 @@ public abstract class MeigicDialog<P extends MeigicPresenter, V extends MeigicVi
         presenter.destroy();
     }
 
-    @Override public void onDestroy() {
-        super.onDestroy();
-        presenter = null;
-    }
-
     protected abstract P initPresenter();
 
     protected abstract View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState);
