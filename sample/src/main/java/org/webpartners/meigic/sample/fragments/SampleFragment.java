@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import org.webpartners.meigic.sample.R;
+import org.webpartners.meigic.sample.helpers.SampleHelper;
 import org.webpartners.meigic.sample.views.SampleFrame;
 import org.webpartners.meigic.views.MeigicFragment;
 
@@ -27,7 +28,7 @@ public class SampleFragment
     @Override protected View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final LinearLayout view = (LinearLayout) inflater.inflate(R.layout.sample_fragment_view, container, false);
 
-        view.addView(new SampleFrame(getContext()));
+        new SampleHelper(getContext(), view).loadChild(new SampleFrame(getContext()));
 
         return view;
     }

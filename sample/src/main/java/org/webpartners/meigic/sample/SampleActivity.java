@@ -1,8 +1,6 @@
 package org.webpartners.meigic.sample;
 
-import android.support.v4.app.FragmentTransaction;
-
-import org.webpartners.meigic.sample.fragments.SampleFragment;
+import org.webpartners.meigic.sample.helpers.SampleHelper;
 import org.webpartners.meigic.views.MeigicActivity;
 
 /**
@@ -15,16 +13,12 @@ public class SampleActivity
         extends MeigicActivity<SampleActivityPresenter, SampleActivityView>
         implements SampleActivityView {
 
-
     @Override protected SampleActivityPresenter initPresenter() {
         return new SampleActivityPresenter(this);
     }
 
     @Override protected void initView() {
         setContentView(R.layout.sample_activity_view);
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_placeholder, new SampleFragment(), "sample_fragment")
-                .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
-                .commit();
+        new SampleHelper(this, findViewById(R.id.fragment_placeholder)).loadChild();
     }
 }
