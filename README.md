@@ -5,7 +5,7 @@ Android MVP super lightweight library
 
  	repositories {
 	    	...
-	    	maven { url 'https://github.com/FireZenk/maven-repo/raw/master/'}
+	    	maven { url 'https://github.com/mrmilu/maven-repo/raw/master/'}
 	}
 	dependencies {
 		  ...
