@@ -6,7 +6,7 @@ import org.webpartners.meigic.views.MeigicActivity;
 /**
  * Project: Meigic sample
  *
- * Created by Jorge Garrido Oval on 1/6/16.
+ * Created on 1/6/16.
  * Copyright © Webpartners 2016
  */
 public class SampleActivity

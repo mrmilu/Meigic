@@ -12,7 +12,7 @@ import org.webpartners.meigic.presenters.MeigicPresenter;
 /**
  * Project: Meigic
  *
- * Created by Jorge Garrido Oval on 20/5/16.
+ * Created on 20/5/16.
  * Copyright © Webpartners 2016
  */
 public abstract class MeigicFragment<P extends MeigicPresenter, V extends MeigicView> extends Fragment {
@@ -35,8 +35,9 @@ public abstract class MeigicFragment<P extends MeigicPresenter, V extends Meigic
 
     @Override public void onDetach() {
         super.onDetach();
-        if (presenter != null)
+        if (presenter != null) {
             presenter.destroy();
+        }
     }
 
     @Override public void onDestroy() {

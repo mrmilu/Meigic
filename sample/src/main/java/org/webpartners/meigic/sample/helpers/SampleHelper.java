@@ -13,7 +13,7 @@ import org.webpartners.meigic.views.MeigicHelper;
 /**
  * Project: Meigic
  *
- * Created by Jorge Garrido Oval on 24/10/16.
+ * Created on 24/10/16.
  * Copyright © Mr.Milú 2016
  */
 

@@ -9,7 +9,7 @@ import org.webpartners.meigic.presenters.MeigicPresenter;
 /**
  * Project: Meigic
  *
- * Created by Jorge Garrido Oval on 20/5/16.
+ * Created on 20/5/16.
  * Copyright © Webpartners 2016
  */
 public abstract class MeigicViewGroup<P extends MeigicPresenter, V extends MeigicView> extends FrameLayout {
@@ -41,8 +41,9 @@ public abstract class MeigicViewGroup<P extends MeigicPresenter, V extends Meigi
 
     @Override protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        if (presenter != null)
+        if (presenter != null) {
             presenter.destroy();
+        }
     }
 
     protected abstract P initPresenter();
