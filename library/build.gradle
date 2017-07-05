@@ -23,7 +23,7 @@ apply plugin: 'maven'
 
 uploadArchives {
     repositories.mavenDeployer {
-        repository(url: "file:///Users/kiketurry/Development/prueba/maven-repo")
+        repository(url: "file:///Users/kiketurry/Development/mvn-repo")
         pom.project {
             groupId 'com.mrmilu'
             artifactId 'meigic'

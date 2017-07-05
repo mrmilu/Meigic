@@ -9,5 +9,5 @@ Android MVP super lightweight library
 	}
 	dependencies {
 		  ...
-	      compile 'com.mrmilu:meigic:1.1.8@aar'
+	      compile 'com.mrmilu:meigic:2.0.0@aar'
 	}
